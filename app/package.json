@@ -1,0 +1,26 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+  "test": "",
+  "start": ""
+  },
+  "repository": {
+  "type": "git",
+  "url": "git+https://github.com/borderguru/hello-world.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+  "url": "https://github.com/borderguru/hello-world/issues"
+  },
+  "homepage": "https://github.com/borderguru/hello-world#readme",
+  "dependencies": {
+  "chai": "^4.1.2",
+  "express": "^4.15.3",
+  "mocha": "^4.0.1",
+  "request": "^2.83.0"
+  }
+ }

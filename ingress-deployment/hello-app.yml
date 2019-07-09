@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web1
+  # namespace: dev
+spec:
+  selector:
+    matchLabels:
+      app: web1
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: web1
+    spec:
+      containers:
+      - name: web1
+        image: "gcr.io/google-samples/hello-app:1.0"
+        ports:
+        - containerPort: 8080
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web2
+  # namespace: dev
+spec:
+  selector:
+    matchLabels:
+      app: web2
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: web2
+    spec:
+      containers:
+      - name: web2
+        image: "gcr.io/google-samples/hello-app:2.0"
+        ports:
+        - containerPort: 8080
